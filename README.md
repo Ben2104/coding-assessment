@@ -1,6 +1,7 @@
 # Local Development with the Firebase Emulator Suite
 ## Prerequisites
 - A simple editor such as Visual Studio Code, Atom, or Sublime Text
+- Java 7 or higher (to install Java use these instructions, to check your version, run java -version)
 - Node.js 10.0.0 or higher (to install Node.js, use nvm, to check your version, run node --version) (Node.js 16.20.2 is recommended for this project)
 ### 🖥 If you're on macOS or Linux:
 ### 1. ✅ Make sure nvm is installed:
@@ -49,7 +50,6 @@ Open Command Prompt or PowerShell:
   node -v
   npm -v
 ```
-- Java 7 or higher (to install Java use these instructions, to check your version, run java -version)
 
 ### Get the source code
 ```
