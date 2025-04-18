@@ -5,17 +5,17 @@ service cloud.firestore {
     // UPDATE THESE LINES
     
     match /carts/{cartID} {
-      allow create: if request.auth.uid == request.resource.data.ownerUID;
-      allow read, update, delete: if request.auth.uid == resource.data.ownerUID;
-      // allow read,write: if true;
+      //allow create: if request.auth.uid == request.resource.data.ownerUID;
+      //allow read, update, delete: if request.auth.uid == resource.data.ownerUID;
+      allow read,write: if true;
     }
 
 
     // Items inside the user's cart
     // UPDATE THESE LINES
     match /carts/{cartID}/items/{itemID} {
-      allow read, write: if get(/databases/$(database)/documents/carts/$(cartID)).data.ownerUID == request.auth.uid;
-      // allow read, write: if true;
+      //allow read, write: if get(/databases/$(database)/documents/carts/$(cartID)).data.ownerUID == request.auth.uid;
+      allow read, write: if true;
     }
 
     // All items available in the store. Users can read
