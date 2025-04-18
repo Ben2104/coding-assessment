@@ -52,25 +52,29 @@ Open Command Prompt or PowerShell:
 - Java 7 or higher (to install Java use these instructions, to check your version, run java -version)
 
 ### Get the source code
-
-
-$ git clone https://github.com/firebase/emulators-codelab.git
+```
+ git clone git@github.com:Ben2104/coding-assessment.git
+```
 Then move into the codelab directory, where you will work for the remainder of this codelab:
-
-
-$ cd emulators-codelab/codelab-initial-state
+```
+  cd emulators-codelab/codelab-initial-state
+```
 Now, install the dependencies so you can run the code. If you're on a slower internet connection this may take a minute or two:
 
+### Move into the functions directory
+```
+  cd functions
+```
 
-# Move into the functions directory
-$ cd functions
+### Install dependencies
+```
+  npm install
+```
 
-# Install dependencies
-$ npm install
-
-# Move back into the previous directory
-$ cd ../
-
+### Move back into the previous directory
+```
+  cd ../
+```
 ### Get the Firebase CLI
 The Emulator Suite is part of the Firebase CLI (command-line interface) which can be installed on your machine with the following command:
 
@@ -96,3 +100,12 @@ Next run the following command to create a project alias. Replace $YOUR_PROJECT_
 ```
  firebase use $YOUR_PROJECT_ID
 ```
+### Start the Emulators
+From inside the codelab source directory, run the following command to start the emulators:
+```
+ firebase emulators:start --import=./seed
+```
+### Open the EmulatorUI
+- In your web browser, navigate to http://127.0.0.1:4000/. You should see the Emulator Suite UI
+- In your web browser, navigate to http://127.0.0.1:5009 and you should see The Fire Store running locally on your machine!
+
