@@ -57,7 +57,7 @@ Open Command Prompt or PowerShell:
 ```
 Then move into the codelab directory, where you will work for the remainder of this codelab:
 ```
-  cd emulators-codelab/codelab-initial-state
+  cd coding-assessment/codelab-initial-state
 ```
 Now, install the dependencies so you can run the code. If you're on a slower internet connection this may take a minute or two:
 
